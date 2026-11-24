@@ -15,7 +15,7 @@ if args.check:
 out=root/'build';out.mkdir(exist_ok=True);archive=out/f"{package['name']}-{manifest['version']}.xpi"
 with zipfile.ZipFile(archive,'w',compression=zipfile.ZIP_DEFLATED) as z:
  for p in files:
-  info=zipfile.ZipInfo(p.relative_to(root/'src').as_posix(),date_time=(2026,1,1,0,0,0));info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
+  info=zipfile.ZipInfo(p.relative_to(root/'src').as_posix(),date_time=(2026,1,1,0,0,0));info.create_system=3;info.compress_type=zipfile.ZIP_DEFLATED;info.external_attr=0o100644<<16
   payload=p.read_bytes()
   if p.suffix.lower()!='.png':payload=payload.replace(b'\r\n',b'\n')
   z.writestr(info,payload)
