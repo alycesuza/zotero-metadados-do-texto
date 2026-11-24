@@ -1,24 +1,24 @@
-# zotero-metadata-from-text
+# Metadados do Texto
 
 Lê as primeiras cinco páginas dos PDFs, texto HTML/TXT e notas OCR existentes para propor correções com evidência.
 
-[![Test and package](https://github.com/alycesuza/zotero-metadata-from-text/actions/workflows/ci.yml/badge.svg)](https://github.com/alycesuza/zotero-metadata-from-text/actions/workflows/ci.yml)
-[Releases](https://github.com/alycesuza/zotero-metadata-from-text/releases) | [English](docs/README.en.md) | [Changelog](CHANGELOG.md)
+[![Test and package](https://github.com/alycesuza/zotero-metadados-do-texto/actions/workflows/ci.yml/badge.svg)](https://github.com/alycesuza/zotero-metadados-do-texto/actions/workflows/ci.yml)
+[Versões e instaladores](https://github.com/alycesuza/zotero-metadados-do-texto/releases) | [English](docs/README.en.md) | [Histórico de versões](CHANGELOG.md)
 
 ## Status e compatibilidade
 
-Versão inicial **0.1.0**, distribuída como **pré-lançamento** para validação no uso diário. Plugin independente para **Zotero 10.0.x**, usando APIs do Zotero Desktop. Não depende das outras extensões desta coleção. Não há suporte declarado para Zotero 6, 7, 8 ou 9 nesta versão.
+Versão **0.1.1**, distribuída como **pré-lançamento** para validação no uso diário. Plugin independente para **Zotero 10.0.x**, usando APIs do Zotero Desktop. Não depende das outras extensões desta coleção. Não há suporte declarado para Zotero 6, 7, 8 ou 9 nesta versão.
 
 ## Instalação
 
-1. Abra [Releases](https://github.com/alycesuza/zotero-metadata-from-text/releases) e escolha a versão desejada, incluindo pré-lançamentos.
-2. Baixe o arquivo `zotero-metadata-from-text-0.1.0.xpi`. Os arquivos “Source code” não são instaladores.
+1. Abra [Versões e instaladores](https://github.com/alycesuza/zotero-metadados-do-texto/releases) e escolha a versão desejada, incluindo pré-lançamentos.
+2. Baixe o arquivo `zotero-metadados-do-texto-0.1.1.xpi`. Os arquivos “Source code” não são instaladores.
 3. No Zotero, abra **Ferramentas > Extensões**, clique na engrenagem e escolha **Instalar extensão de arquivo**. Dependendo da tradução, o menu pode aparecer como Plugins ou Complementos.
 4. Selecione o `.xpi` e confirme a instalação.
 
 ## Como usar
 
-Selecione referências e abra **Ferramentas > Metadados a partir do texto - analisar seleção**. A mesma ação aparece no menu de contexto dos itens. A opção **analisar visão atual** considera os itens da visão atual, respeitando filtros. Clique em **Analisar**, confira os resultados e use **Exportar CSV**.
+Selecione referências e abra **Ferramentas > Metadados do Texto - analisar seleção**. A mesma ação aparece no menu de contexto dos itens. A opção **analisar visão atual** considera os itens da visão atual, respeitando filtros. Clique em **Analisar**, confira os resultados e use **Exportar CSV**.
 
 Para corrigir, confira a evidência e use **Aplicar esta proposta** em cada campo. O histórico local permite **Desfazer última correção**; se outra edição tiver alterado o campo, a reversão é interrompida. A extensão preserva os arquivos originais e não altera automaticamente uma biblioteca inteira.
 
@@ -53,6 +53,6 @@ O endereço automático de atualização aponta a `releases/latest/download/upda
 
 Desative ou remova a extensão em **Ferramentas > Extensões**. Os documentos da biblioteca permanecem no Zotero. O histórico local de correções é preservado para consulta; não é apagado automaticamente.
 
-## Licença e inspiração
+## Licença
 
-AGPL-3.0-only. Copyright 2026 Alyce Suza. [Zotero-OCR](https://github.com/dstark/Zotero-OCR) serviu de referência para a organização de plugin, build e Releases. Esta extensão implementa uma função distinta e não incorpora seu mecanismo de OCR. APIs conforme a [documentação do Zotero](https://www.zotero.org/support/dev/zotero_7_for_developers).
+AGPL-3.0-only. Copyright 2026 Alyce Suza. Documentação técnica: [APIs do Zotero](https://www.zotero.org/support/dev/zotero_7_for_developers).

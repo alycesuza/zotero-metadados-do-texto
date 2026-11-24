@@ -1,6 +1,6 @@
 {
-  "name": "zotero-metadata-from-text",
-  "version": "0.1.0",
+  "name": "zotero-metadados-do-texto",
+  "version": "0.1.1",
   "private": true,
   "description": "Lê as primeiras cinco páginas dos PDFs, texto HTML/TXT e notas OCR existentes para propor correções com evidência.",
   "license": "AGPL-3.0-only",

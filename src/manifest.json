@@ -1,14 +1,14 @@
 {
   "manifest_version": 2,
-  "name": "Metadados a partir do texto",
-  "version": "0.1.0",
+  "name": "Metadados do Texto",
+  "version": "0.1.1",
   "description": "Lê as primeiras cinco páginas dos PDFs, texto HTML/TXT e notas OCR existentes para propor correções com evidência.",
   "author": "Alyce Suza",
-  "homepage_url": "https://github.com/alycesuza/zotero-metadata-from-text",
+  "homepage_url": "https://github.com/alycesuza/zotero-metadados-do-texto",
   "applications": {
     "zotero": {
       "id": "zotero-metadata-from-text@alycesuza.github.io",
-      "update_url": "https://github.com/alycesuza/zotero-metadata-from-text/releases/latest/download/updates.json",
+      "update_url": "https://github.com/alycesuza/zotero-metadados-do-texto/releases/latest/download/updates.json",
       "strict_min_version": "10.0",
       "strict_max_version": "10.0.*"
     }
