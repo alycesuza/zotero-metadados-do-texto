@@ -1,0 +1,27 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+permissions:
+  contents: write
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Check tag version
+        env:
+          TAG: ${{ github.ref_name }}
+        run: node -e 'if(process.env.TAG!=="v"+require("./package.json").version)process.exit(1)'
+      - run: npm test
+      - run: python scripts/build.py
+      - name: Publish pre-release installer
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "$GITHUB_REF_NAME" build/*.xpi build/*.sha256 build/updates.json --title "$GITHUB_REF_NAME" --notes-file RELEASE_NOTES.md --prerelease --verify-tag

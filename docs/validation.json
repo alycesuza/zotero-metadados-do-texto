@@ -1,0 +1,112 @@
+{
+  "zotero": "10.0.8",
+  "platform": "Windows",
+  "date": "2026-11-24",
+  "synthetic_profile": true,
+  "checks": [
+    {
+      "name": "five plugins loaded",
+      "ok": true
+    },
+    {
+      "name": "attachment column registered",
+      "ok": true
+    },
+    {
+      "name": "column uses attachment key",
+      "ok": true
+    },
+    {
+      "name": "document produced results",
+      "ok": true
+    },
+    {
+      "name": "draft sign retained as review signal",
+      "ok": true
+    },
+    {
+      "name": "document panel loaded",
+      "ok": true
+    },
+    {
+      "name": "document panel script initialized",
+      "ok": true
+    },
+    {
+      "name": "document analyze button renders report",
+      "ok": true
+    },
+    {
+      "name": "metadata produced results",
+      "ok": true
+    },
+    {
+      "name": "PDF text extraction proposes DOI",
+      "ok": true
+    },
+    {
+      "name": "reviewed field saved",
+      "ok": true
+    },
+    {
+      "name": "undo restores previous field",
+      "ok": true
+    },
+    {
+      "name": "metadata panel loaded",
+      "ok": true
+    },
+    {
+      "name": "metadata panel script initialized",
+      "ok": true
+    },
+    {
+      "name": "metadata analyze button renders report",
+      "ok": true
+    },
+    {
+      "name": "reference produced results",
+      "ok": true
+    },
+    {
+      "name": "invalid DOI detected",
+      "ok": true
+    },
+    {
+      "name": "reference panel loaded",
+      "ok": true
+    },
+    {
+      "name": "reference panel script initialized",
+      "ok": true
+    },
+    {
+      "name": "reference analyze button renders report",
+      "ok": true
+    },
+    {
+      "name": "coverage produced results",
+      "ok": true
+    },
+    {
+      "name": "expected coverage gap",
+      "ok": true
+    },
+    {
+      "name": "coverage panel loaded",
+      "ok": true
+    },
+    {
+      "name": "coverage panel script initialized",
+      "ok": true
+    },
+    {
+      "name": "expected matrix persisted",
+      "ok": true
+    },
+    {
+      "name": "coverage analyze button renders report",
+      "ok": true
+    }
+  ]
+}

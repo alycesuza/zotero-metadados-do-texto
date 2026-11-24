@@ -1,0 +1,10 @@
+build/
+node_modules/
+__pycache__/
+*.log
+.DS_Store
+*.sqlite*
+*.pdf
+*.docx
+*.ocr
+.env*

@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head><meta charset="utf-8"/><title>Manutenção do Zotero</title><link rel="stylesheet" href="panel.css"/></head>
+<body>
+  <header><h1 id="title">Manutenção do Zotero</h1><p id="description"></p></header>
+  <div id="coverage" hidden="hidden"><label for="expected">Pares esperados (JSON, campos country e category)</label><textarea id="expected" rows="4" placeholder='[{"country":"Brasil","category":"C1"}]'></textarea><button id="saveExpected">Salvar lista esperada</button><p>Os pares ausentes significam ausência de registro no conjunto analisado, não inexistência de legislação.</p></div>
+  <nav><button id="analyze">Analisar</button><button id="export">Exportar CSV</button><button id="undo" hidden="hidden">Desfazer última correção</button><label><span>Filtrar resultados </span><input id="filter" type="search"/></label></nav>
+  <p id="status" role="status" aria-live="polite">Pronto para analisar.</p>
+  <main id="results"></main>
+  <footer><p id="limits"></p><button id="close">Fechar</button></footer>
+  <script src="panel.js"></script>
+</body></html>
